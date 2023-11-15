@@ -4,21 +4,25 @@
 // 1 kilogram = 2.204 pound
 
 const userInput = document.querySelector("#input-field")
-const inputBtn = document.querySelector("#input-btn")
-const feetConv = document.querySelector("#feet")
-const gallonConv = document.querySelector("#gallon")
-const poundConv = document.querySelector("#pound")
+const lengthBtn = document.querySelector("#length-btn")
+const weightBtn = document.querySelector("#weight-btn")
+const volumeBtn = document.querySelector("#volume-btn")
+const resultTitle = document.querySelector("#result-title")
+const resultConv = document.querySelector("#result-output")
+// const gallonConv = document.querySelector("#gallon")
+// const poundConv = document.querySelector("#pound")
 
-inputBtn.addEventListener("click", function(){
-     feetConv.textContent = `${userInput.value} M = ${(userInput.value * 3.281).toFixed(3)} FT | ${userInput.value} FT = ${(userInput.value / 3.281).toFixed(3)} M`
+lengthBtn.addEventListener("click", function(){
+     resultTitle.textContent = `Length (Metres/Feet)`
+     resultConv.textContent = `${userInput.value} M = ${(userInput.value * 3.281).toFixed(3)} FT | ${userInput.value} FT = ${(userInput.value / 3.281).toFixed(3)} M`
 })
-
-inputBtn.addEventListener("click", function(){
-     gallonConv.textContent = `${userInput.value} L = ${(userInput.value * 0.264).toFixed(3)} GL | ${userInput.value} GL = ${(userInput.value / 0.264).toFixed(3)} L`
+weightBtn.addEventListener("click", function(){
+     resultTitle.textContent = `Weight (Kilograms/Pounds)`
+     resultConv.textContent = `${userInput.value} KG = ${(userInput.value * 2.204).toFixed(3)} LBS | ${userInput.value} LBS = ${(userInput.value / 2.204).toFixed(3)} KG`
 })
-
-inputBtn.addEventListener("click", function(){
-     poundConv.textContent = `${userInput.value} KG = ${(userInput.value * 2.204).toFixed(3)} LBS | ${userInput.value} LBS = ${(userInput.value / 2.204).toFixed(3)} KG`
+volumeBtn.addEventListener("click", function(){
+     resultTitle.textContent = `Volume (Litres/Gallons)`
+     resultConv.textContent = `${userInput.value} L = ${(userInput.value * 0.264).toFixed(3)} GL | ${userInput.value} GL = ${(userInput.value / 0.264).toFixed(3)} L`
 })
 
 

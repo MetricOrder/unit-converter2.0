@@ -9,22 +9,27 @@
         
         <div id="head-input">
             <h1>Metric/Imperial Unit Conversion</h1>
-            <input id ="input-field" type="text">
-            <button id = "input-btn">Convert</button>
+            <input id ="input-field" type="text" value="0">
+                <div id = "button-group">
+                    <button id = "length-btn">Convert Length</button>
+                    <button id = "weight-btn">Convert Weight</button>
+                    <button id = "volume-btn">Convert Volume</button>
+                    
+                </div>
         </div>
         <div id="output">
             <div class="results">
-                <h2>Length (Metres/Feet)</h2>
-                <p id="feet">0 M = 0 FT | 0 FT = 0 M</p>
+                <h2 id="result-title">Conversion</h2>
+                <p id="result-output"></p>
             </div>
-            <div class="results">
+            <!-- <div class="results">
                 <h2>Volume (Litres/Gallons)</h2>
                 <p id="gallon">0 L = 0 GL | 0 GL = 0 L</p>
             </div>
             <div class="results">
                 <h2>Mass (Kilograms/Pounds)</h2>
                 <p id="pound">0 KG = 0 LBS | 0 LBS = 0 KG</p>
-            </div>
+            </div> -->
         </div>
 
         <script src="index.js"></script>
