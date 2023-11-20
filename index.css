@@ -9,14 +9,14 @@ body {
 }
 h1 {
     font-weight: 800;
-    color: #FFFFFF;
+    color: #e0e0e0;
 }
 
 #head-input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #6943FF;
+    background: #33658a;
     width: 550px;
     height: 285px;
 }
@@ -31,8 +31,8 @@ h1 {
     margin-top: 18px;
     font-size: 58px;
     font-weight: 800;
-    background: #6943FF;
-    color: #FFFFFF;
+    background: #33658a;
+    color: #e0e0e0;
     border: #B295FF solid 2px;
     border-radius: 5px;
 
@@ -69,7 +69,7 @@ h2 {
 p {
     font-size: 14px;
     font-weight: 500;
-    color: #FFFFFF
+    color: #e0e0e0
 }
 
 .results {
